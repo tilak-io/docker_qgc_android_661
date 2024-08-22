@@ -14,10 +14,11 @@ export CMAKE_TOOLCHAIN_FILE=/opt/Qt/6.6.1/android_arm64_v8a/lib/cmake/Qt6/qt.too
 export CMAKE_PREFIX_PATH=/opt/Qt/6.6.1/android_arm64_v8a/bin/qt-cmake
 export QT_HOST_PATH=/opt/Qt/6.6.1/gcc_64
 
-wget https://gstreamer.freedesktop.org/data/pkg/android/1.18.6/gstreamer-1.0-android-universal-1.18.6.tar.xz
+wget https://github.com/tilak-io/docker_qgc_android_661/releases/download/gstreamer/gstreamer-1.0-android-universal-1.18.5.tar.xz.1
+# wget https://gstreamer.freedesktop.org/data/pkg/android/1.18.6/gstreamer-1.0-android-universal-1.18.6.tar.xz
 rm -r gstreamer-1.0-android-universal-1.18.5 || true
 mkdir gstreamer-1.0-android-universal-1.18.5
-tar xf gstreamer-1.0-android-universal-1.18.6.tar.xz -C gstreamer-1.0-android-universal-1.18.5
+tar xf gstreamer-1.0-android-universal-1.18.5.tar.xz.1 -C gstreamer-1.0-android-universal-1.18.5
 
 eabi=arm64-v8a
 arch=android_arm64_v8a
